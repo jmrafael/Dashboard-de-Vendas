@@ -21,7 +21,7 @@ if authentication_status:
     authenticator.logout('Sair', 'main')
     st.write('Bem-vindo(a) *%s*' % (name))
     st.title('Some content')
-
+    #sys.stdout = open('home.py', 'r')
 elif authentication_status == False:
     st.error('Credenciais incorrectas')
 elif authentication_status == None:
